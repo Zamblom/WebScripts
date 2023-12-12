@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DataCore_Gen</title>
+    <link id="link-favicon" rel="icon" type="image/xicon" href="data:image/x-icon;base64,AAABAAEAQEAAAAEACAAoFgAAFgAAACgAAABAAAAAgAAAAAEACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0AAAAWAAAAHAAAACIAAAAmAAAAKgAAAC4AAAAyAAAANQAAADgAAAA7AAAAPQAAAEIAAABHAAAASQAAAEsAAABNAAAAUQAAAFMAAABWAAAAWgAAAFwAAABfAAAAYgAAAGMAAABlAAAAZgAAAGkAAABrAAAAbQAAAG4AAAByAAAAdQAAAHYAAAB3AAAAeAAAAHoAAAB8AAAAfQAAAH4AAACCAAAAgwAAAIYAAACIAAAAiQAAAIsAAACMAAAAjwAAAJAAAACRAAAAkgAAAJQAAACVAAAAmAAAAJsAAACeAAAAnwAAAKAAAACiAAAAowAAAKUAAACnAAAAqQAAAKoAAACrAAAArAAAAK0AAACvAAAAsAAAALIAAAC0AAAAtgAAALkAAAC6AAAAuwAAALwAAAC+AAAAvwAAAMIAAADFAAAAxgAAAMgAAADKAAAAywAAAMwAAADNAAAAzgAAANAAAADRAAAA0gAAANUAAADXAAAA2AAAANkAAADcAAAA3QAAAN8AAADgAAAA4QAAAOIAAADlAAAA5wAAAOgAAADqAAAA6wAAAOwAAADtAAAA7wAAAPAAAADyAAAA8wAAAPUAAAD2AAAA9wAAAPgAAAD5AAAA+gAAAPsAAAD8AAAA/QAAAP4AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACRKPT09PT09PT09PT0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACRrenp6enp6enp6enp6PQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkSgAAAAAAAAAAAAAka3p6enp6enp6enp6ej0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAka3pmHQAAAAAAAAAAACRKPT09PT09PT09PT0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJGt6enVIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkUXV6ems9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdY3p6emM9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9a3p6ej0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABfenpjAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD1renp3HQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPWt6enpjHQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdY3p6ems9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAddXp6az0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVXp1SAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABVHQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPgAAAAAAAAf8AAAAAAAAA/gAAAAAAAAB8AAAAAAAAADgAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAcAAAAAAAAAD4AAAAAAAAAfwAAAAAAAAD/gAAAAAAAAf">
+    <link rel="stylesheet" href="https://www.cssscript.com/demo/minimal-notification-popup-pure-javascript/notifications.css">
+    <script src="https://www.cssscript.com/demo/minimal-notification-popup-pure-javascript/notifications.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <!-- For fonts: "https://fonts.googleapis.com/css?family=<font-family>" -->
+    <style id="style-generic">
+        * {
+            box-sizing: border-box;
+            font-family: sans-serif;
+            resize: none;
+        }
+
+        html, body {
+            margin: 0;
+        }
+
+        .prevent-select {
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .main-column {
+            position: absolute;
+            height: 100vh;
+            padding: 1vh 1vw 1vh 1vw;
+        }
+    </style>
+    <style id="style-editor">
+        #editor {
+            background-color: #DDD;            
+            width: 45vw;
+        }
+    </style>
+    <style id="style-editor-controls">
+        #editor-controls {
+            width: 100%;
+            height: 96%;
+        }
+
+        textarea {
+            white-space: pre;
+            overflow-wrap: normal;
+            overflow-x: auto;
+        }
+
+        #message-content-editor {
+            display: block;
+            width: 100%;
+            height: 20%;
+        }
+
+        #message-meta-controls {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #message-meta-editor {
+            display: block;
+            width: 70%;
+        }
+
+        #message-meta-controls>div {
+            padding: 1%;
+            width: 30%;
+        }
+
+        #message-meta-controls>div>div {
+            display: inline-block;
+            max-width: 80%;
+        }
+
+        #message-meta-controls div label {
+            display: inline;
+        }
+
+        #message-meta-controls div textarea {
+            width: 100%;
+        }
+
+        #message-position-controls {
+            margin-top: 1%;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        #message-position-controls button {
+            width: 33%;
+        }
+    </style>
+    <style id="style-editor-file-controls">
+        #file-controls {
+            display: flex;
+            margin-top: 0.6vh;
+            height: 3%;
+            gap: 1%;
+        }
+
+        #file-controls label, #file-controls button {
+            border: 1px solid black;
+            min-width: fit-content;
+        }
+
+        #file-controls label:hover, #file-controls button:hover {
+            background-color: #BBB;
+        }
+
+        #file-controls label {
+            display: inline-flex;
+            align-items: center;
+            font-size: 0.8rem;
+            padding-inline: 6px;
+            background-color: buttonface;
+        }
+    </style>
+    <style id="style-layout">
+        #layout {
+            background-color: #BBB;
+            width: 14.5vw;
+            left: 45vw;
+        }
+    </style>
+    <style id="style-layout-message-controls">
+        #message-controls {            
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        #message-controls div:first-child {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        #message-controls div:last-child {
+            flex-grow: 5;
+            display: flex;
+        }
+
+        #message-controls button {
+            all: unset;
+            background-color: #FFF;
+            text-align: center;
+            flex-grow: 1;
+            height: 100%;
+            width: 10%;
+            margin: 1%;
+        }
+
+        #move-message-up {
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        #move-message-down {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #delete-message {
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        #new-message {
+            display: block;
+            width: 100%;
+            margin-top: 3%;
+        }
+    </style>
+    <style id="style-layout-messages">
+        #message-selectors {
+            margin-top: 3%;
+            margin-bottom: 1%;
+            border: 2px solid #999;
+            padding: 1%;
+            max-height: 90%;
+            overflow: auto;
+        }
+
+        .message-selector {
+            display: block;
+            width: 100%;
+            margin-top: 1%;
+        }
+
+        .selected {
+            background-color: #BBB;
+        }
+    </style>
+    <style id="style-resize-handle">
+        #resize-handle {
+            background-color: #999;
+            left: 59.5vw;
+            width: 0.5vw;
+            padding: 0;
+            cursor: w-resize;
+        }
+    </style>
+    <style id="style-display">
+        #display {
+            width: 40vw;
+            left: 60vw;
+        }
+    </style>
+    <style id="style-display-content">
+        #content {
+            position: relative;
+            border: 2px solid black;
+            width: 100%;
+            height: 96%;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        
+        .message-line {
+            display: block;
+            width: 100%;
+            padding: 1%;
+        }
+
+        .message {
+            font-size: 1.2rem;
+            max-width: 70%;
+        }
+
+        .message-content {
+            border-width: 2px;
+            border-style: solid;
+	        width: fit-content;
+            padding: 1%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .message-meta {
+            margin: 0.5%;
+            font-size: 0.6rem;
+        }
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .center .message-content {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .center .message-meta {
+            text-align: center;
+        }
+
+        .right, .right .message-content {
+            margin-left: auto; 
+            margin-right: 0;
+        }
+
+        .right .message-meta {
+            text-align: right;
+        }
+    </style>
+    <style id="style-display-controls">
+        #display-controls {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0.6vh;
+            height: 3%;
+        }
+
+        #display-controls>div {
+            display: flex;
+        }
+
+        #display-controls>div>div {
+            display: inline-grid;
+            place-content: center;
+        }
+        
+        #display-controls button {
+            border: 1px solid black;
+            border-right: none;
+            min-width: fit-content;
+        }
+
+        #display-controls button:hover {
+            background-color: #BBB;
+        }
+
+        #display-controls button:last-child {
+            border-right: 1px solid black;
+        }
+    </style>
+    <style id="style-theme-1">
+        /* cyrillic-ext */
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4Ep0.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        }
+
+        /* cyrillic */
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4Ep0.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+
+        /* greek */
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4Ep0.woff2) format('woff2');
+            unicode-range: U+0370-03FF;
+        }
+
+        /* vietnamese */
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4Ep0.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4Ep0.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        
+        /* latin */
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        .theme-1 {
+            color: rgb(255, 179, 0);
+            border-color: rgb(255, 179, 0);
+            background: linear-gradient(159deg, rgba(46,0,0,1) 0%, rgba(0,0,0,1) 84%);
+        }
+
+        .theme-1 * {
+            font-family: "Roboto Mono";
+        }
+
+        .theme-1 .message-content {
+            font-style: italic;
+        }
+    </style>
+    <style id="style-theme-2">
+        /* vt323@5.0.8-vietnamese-400-normal */
+        @font-face {
+            font-family: 'VT323';
+            font-style: normal;
+            font-display: swap;
+            font-weight: 400;
+            src: url(https://cdn.jsdelivr.net/fontsource/fonts/vt323@5.0.8/vietnamese-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/vt323@5.0.8/vietnamese-400-normal.woff) format('woff');
+            unicode-range: U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;
+        }
+
+        /* vt323@5.0.8-latin-ext-400-normal */
+        @font-face {
+            font-family: 'VT323';
+            font-style: normal;
+            font-display: swap;
+            font-weight: 400;
+            src: url(https://cdn.jsdelivr.net/fontsource/fonts/vt323@5.0.8/latin-ext-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/vt323@5.0.8/latin-ext-400-normal.woff) format('woff');
+            unicode-range: U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;
+        }
+
+        /* vt323@5.0.8-latin-400-normal */
+        @font-face {
+            font-family: 'VT323';
+            font-style: normal;
+            font-display: swap;
+            font-weight: 400;
+            src: url(https://cdn.jsdelivr.net/fontsource/fonts/vt323@5.0.8/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/vt323@5.0.8/latin-400-normal.woff) format('woff');
+            unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+        }
+
+        .theme-2 {
+            color: rgb(81, 255, 0);
+            border-color: rgb(81, 255, 0);
+            background: linear-gradient(159deg, rgba(30,30,30,1) 0%, rgba(0,0,0,1) 84%);
+        }
+
+        .theme-2 * {
+            font-family: "VT323";
+        }
+
+        .theme-2 .message-content {
+            font-size: 1.2rem;
+        }
+
+        .theme-2 .message-meta {
+            font-size: 0.9rem;
+        }
+    </style>
+    <style id="style-theme-3">
+        .theme-3 {
+            color: rgb(0, 0, 0);
+            border-color: rgb(50, 50, 50);
+            background: rgb(255, 255, 255);
+        }
+    </style>
+    <style id="style-theme-4">
+        @font-face {
+            font-family: "Cedarville Cursive";
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/cedarvillecursive/v17/yYL00g_a2veiudhUmxjo5VKkoqA-B_nuIrpw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        .theme-4 {
+            color: rgb(50, 20, 0);
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAUVBMVEWFhYWDg4N3d3dtbW17e3t1dXWBgYGHh4d5eXlzc3OLi4ubm5uVlZWPj4+NjY19fX2JiYl/f39ra2uRkZGZmZlpaWmXl5dvb29xcXGTk5NnZ2c8TV1mAAAAG3RSTlNAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEAvEOwtAAAFVklEQVR4XpWWB67c2BUFb3g557T/hRo9/WUMZHlgr4Bg8Z4qQgQJlHI4A8SzFVrapvmTF9O7dmYRFZ60YiBhJRCgh1FYhiLAmdvX0CzTOpNE77ME0Zty/nWWzchDtiqrmQDeuv3powQ5ta2eN0FY0InkqDD73lT9c9lEzwUNqgFHs9VQce3TVClFCQrSTfOiYkVJQBmpbq2L6iZavPnAPcoU0dSw0SUTqz/GtrGuXfbyyBniKykOWQWGqwwMA7QiYAxi+IlPdqo+hYHnUt5ZPfnsHJyNiDtnpJyayNBkF6cWoYGAMY92U2hXHF/C1M8uP/ZtYdiuj26UdAdQQSXQErwSOMzt/XWRWAz5GuSBIkwG1H3FabJ2OsUOUhGC6tK4EMtJO0ttC6IBD3kM0ve0tJwMdSfjZo+EEISaeTr9P3wYrGjXqyC1krcKdhMpxEnt5JetoulscpyzhXN5FRpuPHvbeQaKxFAEB6EN+cYN6xD7RYGpXpNndMmZgM5Dcs3YSNFDHUo2LGfZuukSWyUYirJAdYbF3MfqEKmjM+I2EfhA94iG3L7uKrR+GdWD73ydlIB+6hgref1QTlmgmbM3/LeX5GI1Ux1RWpgxpLuZ2+I+IjzZ8wqE4nilvQdkUdfhzI5QDWy+kw5Wgg2pGpeEVeCCA7b85BO3F9DzxB3cdqvBzWcmzbyMiqhzuYqtHRVG2y4x+KOlnyqla8AoWWpuBoYRxzXrfKuILl6SfiWCbjxoZJUaCBj1CjH7GIaDbc9kqBY3W/Rgjda1iqQcOJu2WW+76pZC9QG7M00dffe9hNnseupFL53r8F7YHSwJWUKP2q+k7RdsxyOB11n0xtOvnW4irMMFNV4H0uqwS5ExsmP9AxbDTc9JwgneAT5vTiUSm1E7BSflSt3bfa1tv8Di3R8n3Af7MNWzs49hmauE2wP+ttrq+AsWpFG2awvsuOqbipWHgtuvuaAE+A1Z/7gC9hesnr+7wqCwG8c5yAg3AL1fm8T9AZtp/bbJGwl1pNrE7RuOX7PeMRUERVaPpEs+yqeoSmuOlokqw49pgomjLeh7icHNlG19yjs6XXOMedYm5xH2YxpV2tc0Ro2jJfxC50ApuxGob7lMsxfTbeUv07TyYxpeLucEH1gNd4IKH2LAg5TdVhlCafZvpskfncCfx8pOhJzd76bJWeYFnFciwcYfubRc12Ip/ppIhA1/mSZ/RxjFDrJC5xifFjJpY2Xl5zXdguFqYyTR1zSp1Y9p+tktDYYSNflcxI0iyO4TPBdlRcpeqjK/piF5bklq77VSEaA+z8qmJTFzIWiitbnzR794USKBUaT0NTEsVjZqLaFVqJoPN9ODG70IPbfBHKK+/q/AWR0tJzYHRULOa4MP+W/HfGadZUbfw177G7j/OGbIs8TahLyynl4X4RinF793Oz+BU0saXtUHrVBFT/DnA3ctNPoGbs4hRIjTok8i+algT1lTHi4SxFvONKNrgQFAq2/gFnWMXgwffgYMJpiKYkmW3tTg3ZQ9Jq+f8XN+A5eeUKHWvJWJ2sgJ1Sop+wwhqFVijqWaJhwtD8MNlSBeWNNWTa5Z5kPZw5+LbVT99wqTdx29lMUH4OIG/D86ruKEauBjvH5xy6um/Sfj7ei6UUVk4AIl3MyD4MSSTOFgSwsH/QJWaQ5as7ZcmgBZkzjjU1UrQ74ci1gWBCSGHtuV1H2mhSnO3Wp/3fEV5a+4wz//6qy8JxjZsmxxy5+4w9CDNJY09T072iKG0EnOS0arEYgXqYnXcYHwjTtUNAcMelOd4xpkoqiTYICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==);
+            background-color: rgb(248, 213, 175);
+        }
+
+        .theme-4 * {
+            font-family: "Cedarville Cursive";
+            background: none;
+            border: none;
+        }
+
+        .theme-4 .message-content {
+            font-size: 1.1rem;
+        }
+
+        .theme-4 .message-meta {
+            font-size: 0.9rem;
+        }
+    </style>
+    <style id="style-theme-5">
+        /* latin-ext */
+        @font-face {
+            font-family: "Rye";
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/rye/v15/r05XGLJT86YzH57tbOo.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: "Rye";
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/rye/v15/r05XGLJT86YzEZ7t.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        .theme-5 {
+            color: rgb(50, 20, 0);
+            background-image: url(data:image/png;base64,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);
+            background-color: rgb(248, 213, 175);
+        }
+
+        .theme-5 * {
+            font-size: 2rem;
+            font-family: "Rye";
+            background: none;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="editor" class="main-column">
+        <div id="editor-controls">
+            <label for="message-content-editor">Message Content</label>
+            <textarea id="message-content-editor" oninput='this.style.height = "";this.style.height = Math.min(vhToPx(70), this.scrollHeight + 20) + "px"; updateContent(this.value);'></textarea>
+            <label for="message-meta-editor">Message Meta</label>
+            <div id="message-meta-controls">
+                <textarea id="message-meta-editor" oninput='updateMeta(this.value);'></textarea>
+                <div>
+                    <label for="message-sender-editor">Sender</label>
+                    <textarea id="message-sender-editor"></textarea>
+                    <label for="message-timestamp-editor">Timestamp</label>
+                    <textarea id="message-timestamp-editor"></textarea>
+                    <button id="apply-sender-and-timestamp" type="button" onclick="buildMeta();">Apply to Meta</button>
+                </div>
+            </div>
+            <div id="message-position-controls">
+                <button id="message-position-left" type="button" onclick="updatePosition('left')">Left</button>
+                <button id="message-position-center" type="button" onclick="updatePosition('center')">Center</button>
+                <button id="message-position-right" type="button" onclick="updatePosition('right')">Right</button>
+            </div>
+        </div>
+        <div id="file-controls">
+            <label for="load-from-file">Load From File</label>
+            <input id="load-from-file" type="file" style="display: none;" onchange="loadFromFile()">
+            <button type="button" onclick="saveToFile()">Save To File</button>
+            <input id="save-file-name" type="text" oninput="setFilename(this.value);">
+        </div>
+    </div>
+    <div id="layout" class="main-column prevent-select">
+        <div id="message-controls">
+            <div>
+                <label for="theme-selector">Theme:</label>
+                <select id="theme-selector" onchange="setTheme(this.value);"></select>
+            </div>
+            <div>
+                <button id="move-message-up" type="button" onclick="moveSelectedUp();">▲</button>
+                <button id="move-message-down" type="button" onclick="moveSelectedDown();">▼</button>
+                <button id="delete-message" type="button" onclick="deleteMessage();">⨉</button>
+            </div>
+        </div>  
+        <div id="message-selectors"></div>
+        <button id="new-message" type="button" onclick="newMessage();">Append New Message</button>
+    </div>
+    <div id="resize-handle" class="main-column"></div>
+    <div id="display" class="main-column prevent-select">
+        <div id="content" class="theme-1"></div>
+        <div id="display-controls">
+            <div>
+                <div>Export:&nbsp;</div>
+                <button type="button" onclick="exportContentToJPG()">JPEG</button>
+                <button type="button" onclick="exportContentToHTML()">HTML</button>
+                <button type="button" onclick="exportContentToClipboard()">Clipboard</button>
+            </div>
+            <span style="min-width: 2%;"></span>
+            <div>
+                <button type="button" onclick="resetWidths();">Reset Widths</button>
+                <button type="button" onclick="clearMessages();">Clear Messages</button>
+            </div>
+        </div>
+    </div>
+    <a id="file-download-helper" hidden="true"></a>
+</body>
+<script id="script-generic">
+    var messages = [
+        {pos: "center", content: '<span style="font-style: normal">┏━━━━━━━━━━━━┓<br>┃This is a Title Card┃<br>┗━━━━━━━━━━━━┛</span>', meta: "It won't fit all themes though!"},
+        {content: "Hello World!"},
+        {content: "This is an message log building application.", meta: "&lt;_Unknown&gt; [02-01-2137]"},
+        {pos: "right", content: "Hopefully there are no bugs!"},
+        {pos: "right", content: "For <span style='color: red; font-style: normal'>SPECIAL FORMATTING</span>, you can use html tags!"},
+        {pos: "right", content: "Realllllllyyyyy lonnnnnggggg messssaagggeesss should auto wrap to fit the window.", meta: "&lt;_Unknown&gt; [08-12-2023]"},
+        {content: "You can resize the window slightly by dragging the dark grey stripe."},
+        {content: "&lt;--", meta: "&lt;_Unknown&gt; [08-12-2023]"},
+        {pos: "right", content: "The characters &lt;, &gt;, and &amp; must be escaped!", meta: "&lt;_Unknown&gt; [08-12-2023]"},
+        {content: "Write them as:&nbsp;<ul><li>&amp;lt;</li><li>&amp;gt;</li>and<li>&amp;amp;</li></ul>"},
+        {content: "And use &amp;nbsp; for non-breaking spaces.", meta: "&lt;_Unknown&gt; [08-12-2023]"},
+        {pos: "right", content: "Good luck!", meta: "&lt;_Final&gt; [08-12-2023/11:48]"},
+        {pos: "center", content: "<span style='color: red; font-style: normal;'>Alert: [Alarm Triggered]</span>", meta: "&lt;_Door 0x0A&gt; [03-01-2137/14:30]"},
+        {pos: "right", content: "Hmm, better check that out...", meta: "&lt;_Guard0x57&gt; [03-01-2137/14:31]"},
+        {content: "Report In."},
+        {content: "What is your status?", meta: "&lt;_CommandPost&gt; [03-01-2137/14:39]"},
+        {content: "Aww shit...", meta: "&lt;_CommandPost&gt; [03-01-2137/14:42]"},
+        {pos: "center", content: "<span style='color: red; font-style: normal'>Command Post Offline</span>", meta: "&lt;_SecurityGrid&gt; [03-01-2137]"},
+    ];
+
+    window.onload = function() {
+        initialiseThemes();
+        initialiseResizables();
+        document.querySelector("#file-controls label").style.cssText = getComputedStyle(document.getElementById("load-from-file")).cssText
+        rebuildPage();
+    }
+</script>
+<script id="script-message-editing-handler">
+    function extractMeta() {
+        const meta = document.getElementById("message-meta-editor").value;
+        const match = /&lt;_.*&gt; \[.*\]/.exec(meta) != null;
+        const sender = (match)
+            ? (/(?<=&lt;_).*(?=&gt;)/.exec(meta)[0])
+            : ("");
+        const timestamp = (match)
+            ? (new RegExp("(?<=&lt;_" 
+                + sender.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+                + "&gt; \\[).*(?=\\])").exec(meta)[0])
+            : ("");
+        document.getElementById("message-sender-editor").value = sender;
+        document.getElementById("message-timestamp-editor").value = timestamp;
+    }
+
+    function updateContent(content) {
+        if (!verifySelectedMessage()) {newMessage();}
+        messages[selectedMessage].content = (content == "")
+            ? (undefined)
+            : (newlinesToBreaks(content));
+        rebuildPage();
+    }
+
+    function updateMeta(meta) {
+        extractMeta();
+        if (!verifySelectedMessage()) {newMessage();}
+        messages[selectedMessage].meta = (meta == "")
+            ? (undefined)
+            : (newlinesToBreaks(meta));
+        rebuildPage();
+    }
+
+    function selectPosition(position) {
+        document.getElementById("message-position-left").style.backgroundColor = (position == "left")
+            ? ("#BBB")
+            : ("buttonface");
+        document.getElementById("message-position-center").style.backgroundColor = (position == "center")
+            ? ("#BBB")
+            : ("buttonface");
+        document.getElementById("message-position-right").style.backgroundColor = (position == "right")
+            ? ("#BBB")
+            : ("buttonface");
+    }
+
+    function updatePosition(position) {
+        if (!verifySelectedMessage()) {newMessage();}
+        messages[selectedMessage].pos = position;
+        selectPosition(position);
+        rebuildPage();
+    }
+</script>
+<script id="script-message-building-handler">
+    function messageToHTML(message, index) {
+        return "<div "
+                + "class=\"message-line\"" 
+            + ">"
+                + "<div "
+                    + "class=\"message " + ((message.pos == "center" || message.pos == "right") 
+                        ? (message.pos) 
+                        : ("left")) + "\" "
+                    + "onclick=\"selectMessage(" + index + ");\""
+                + ">" +
+                    ((message.content != undefined) 
+                        ? ("<div class=\"message-content\">" + message.content + "</div>") 
+                        : ("")) +
+                    ((message.meta != undefined) 
+                        ? ("<div class=\"message-meta\">" + message.meta + "</div>") 
+                        : ("")) +
+                "</div>"
+            + "</div>";
+    }
+
+    function buildContent() {
+        document.getElementById("content").innerHTML = messages.map((message, i) => {return messageToHTML(message, i);}).join("");
+    }
+
+    function messageToSelector(message, index) {
+        return "<button "
+                + "id=\"message-selector-" + index + "\" "
+                + "class=\"message-selector\" "
+                + "type=\"button\" "
+                + "onclick=\"selectMessage(" + index + ");\" " 
+                + "style=\""
+                + "text-align: " + ((message.pos == "center" || message.pos == "right") ? (message.pos) : ("left"))+ "\""
+            + ">"
+                    + index
+                    + ": [" + ((message.content != undefined) 
+                        ? (sanitizeTags(message.content.slice(0, 20)) + ((message.content.length > 20)
+                            ? ("...")
+                            : (""))) 
+                        : (""))
+                    + "]"
+            + "</button>";
+    }
+
+    function buildLayout() {
+        document.getElementById("message-selectors").innerHTML = messages.map((message, i) => {return messageToSelector(message, i);}).join("");
+        selectMessage(selectedMessage);
+    }
+    
+    function buildMeta() {
+        const newMetaValue = 
+            "&lt;_" + document.getElementById("message-sender-editor").value + "&gt; " + 
+            "[" + document.getElementById("message-timestamp-editor").value + "]";
+        document.getElementById("message-meta-editor").value = newMetaValue;
+        updateMeta(newMetaValue);
+    }
+
+    function rebuildPage() {
+        buildContent();
+        buildLayout();
+    }
+</script>
+<script id="script-message-management-handler">
+    var selectedMessage = 0;
+    
+    function newMessage() {
+        messages.push({});
+        selectedMessage = messages.length - 1;
+        rebuildPage();
+    }
+
+    function selectMessage(index) {
+        selectedMessage = index;
+        [...document.getElementsByClassName("message-selector")].map((selector) => {selector.classList.remove("selected")});
+        if (verifySelectedMessage()) {document.getElementById("message-selector-" + index).classList.add("selected");}
+        loadMessage(index);
+    }
+
+    function loadMessage() {
+        document.getElementById("message-content-editor").value = (verifySelectedMessage() && messages[selectedMessage].content != undefined)
+            ? (breaksToNewlines(messages[selectedMessage].content))
+            : ("");
+        document.getElementById("message-meta-editor").value = (verifySelectedMessage() && messages[selectedMessage].meta != undefined)
+            ? (breaksToNewlines(messages[selectedMessage].meta))
+            : ("");
+        selectPosition(verifySelectedMessage()
+            ? ((messages[selectedMessage].pos != undefined)
+                ? (messages[selectedMessage].pos)
+                : ("left"))
+            : null);
+        if (verifySelectedMessage()) {extractMeta()};
+    }
+
+    function verifySelectedMessage() {
+        const withinRange = selectedMessage >= 0 && selectedMessage < messages.length;
+        document.getElementById("move-message-up").disabled = !(withinRange && selectedMessage != 0);
+        document.getElementById("move-message-down").disabled = !(withinRange && selectedMessage != messages.length - 1);
+        document.getElementById("delete-message").disabled = !withinRange;
+        if (!withinRange) {selectedMessage = -1;}
+        return withinRange;
+    }
+
+    function deleteMessage() {
+        if (!verifySelectedMessage()) {return;}
+        let newMessages = [];
+        for (let i=0; i<messages.length; i++) {
+            if (i != selectedMessage) {newMessages.push(messages[i]);}
+        }
+        messages = newMessages;
+        const oldSelectedMessage = selectedMessage;
+        if (!verifySelectedMessage()) {selectedMessage = oldSelectedMessage - 1;}
+        rebuildPage();
+    }
+
+    function clearMessages() {
+        if (confirm("This action cannot be undone.\nAre you sure you wish to delete all messages?")) {
+            messages = [];
+            rebuildPage();
+            displayNotification(true, "Success", "Cleared all messages");
+        } else {
+            displayNotification(false, "Failure", "Message deletion was cancelled");
+        }
+    }
+
+    function moveSelectedUp() {
+        if (!verifySelectedMessage()) {return;}
+        if (selectedMessage < 1) {return;}
+        let prevMessage = messages[selectedMessage - 1];
+        messages[selectedMessage - 1] = messages[selectedMessage];
+        messages[selectedMessage] = prevMessage;
+        selectedMessage -= 1;
+        rebuildPage();
+    }
+
+    function moveSelectedDown() {
+        if (!verifySelectedMessage()) {return;}
+        if (selectedMessage > messages.length - 2) {return;}
+        let nextMessage = messages[selectedMessage + 1];
+        messages[selectedMessage + 1] = messages[selectedMessage];
+        messages[selectedMessage] = nextMessage;
+        selectedMessage += 1;
+        rebuildPage();
+    }
+</script>
+<script id="script-utils">
+    function breaksToNewlines(str) {
+        return str.replaceAll("<br>", "\n");
+    }
+
+    function newlinesToBreaks(str) {
+        return str.replaceAll("\n", "<br>");
+    }
+
+    function sanitizeTags(str) {
+        return str.replace(/[&<>]/g, function(tag) {return {'&': '&amp;','<': '&lt;','>': '&gt;'}[tag] || tag;});
+    }
+
+    function pxToVw(px) {
+        return 100 * px / window.innerWidth;
+    }
+
+    function vhToPx(vh) {
+        return vh * window.innerHeight / 100;
+    }
+</script>
+<script id="script-resize-handler">
+    var mPos;
+
+    function initialiseResizables() {
+        document.getElementById("resize-handle").addEventListener("mousedown", function(event) {
+            mPos = event.x;
+            document.addEventListener("mousemove", resize, false);
+        }, false);
+
+        document.addEventListener("mouseup", function(){
+            document.removeEventListener("mousemove", resize, false);
+        }, false);
+    }
+
+    function resize(event){
+        let dx = event.x - mPos;
+        mPos = event.x;
+
+        const editor = document.getElementById("editor");
+        const layout = document.getElementById("layout");
+        const resizeHandle = document.getElementById("resize-handle");
+        const display = document.getElementById("display");
+        const layoutControls = document.querySelector("#message-controls div");
+        const displayControls = document.querySelector("#display-controls");
+
+        // Define width boundaries
+        const layoutMinWidth = parseFloat(getComputedStyle(layout).paddingLeft) + layoutControls.offsetWidth + parseFloat(getComputedStyle(layout).paddingRight);
+        let displayControlsWidth = 0;
+        for (let i=0; i<displayControls.children.length; i++) {
+            const child = displayControls.children[i];
+            displayControlsWidth += parseFloat(getComputedStyle(child).width);
+        }
+        const displayMinWidth = parseFloat(getComputedStyle(display).paddingLeft) + displayControlsWidth + parseFloat(getComputedStyle(display).paddingRight);
+
+        // Constrain dx to boundaries
+        if (dx < 0 && layout.offsetWidth + dx < layoutMinWidth) {dx = layoutMinWidth - layout.offsetWidth;}
+        if (dx > 0 && display.offsetWidth - dx < displayMinWidth) {dx = display.offsetWidth - displayMinWidth;}
+
+        // Resize layout and display as required
+        layout.style.width = pxToVw(layout.offsetWidth + dx) + "vw";
+        resizeHandle.style.left = pxToVw(editor.offsetWidth + layout.offsetWidth) + "vw";
+        display.style.left = pxToVw(editor.offsetWidth + layout.offsetWidth + resizeHandle.offsetWidth) + "vw";
+        display.style.width = pxToVw(window.innerWidth - (editor.offsetWidth + layout.offsetWidth + resizeHandle.offsetWidth)) + "vw";
+    }
+
+    function resetWidths() {
+        document.getElementById("layout").style.width = "14.5vw";
+        document.getElementById("resize-handle").style.left = "59.5vw";
+        document.getElementById("resize-handle").style.width = "0.5vw";
+        document.getElementById("display").style.left = "60vw";
+        document.getElementById("display").style.width = "40vw";
+        displayNotification(true, "Success", "Reset Widths");
+    }
+</script>
+<script id="script-theme-handler">
+    var currentTheme = null;
+    var themes = [];
+
+    function initialiseThemes() {
+        let i = 1;
+        while (document.getElementById("style-theme-" + i) != null) {
+            const theme = "theme-" + i
+            themes.push(theme);
+            const opt = document.createElement('option');
+            opt.value = theme;
+            opt.innerHTML = theme;
+            document.getElementById('theme-selector').appendChild(opt);
+            i++;
+        }
+
+        if (themes.length == 0) {
+            displayNotification(false, "Error", "No valid themes found");
+            return;
+        }
+
+        setTheme(themes[0]);
+    }
+
+    function setTheme(theme) {
+        if (!themes.includes(theme)) {
+            displayNotification(false, "Error", "Failed to load theme");
+            return;
+        }
+
+        for (let i=0; i<themes.length; i++) {
+            document.getElementById("content").classList.remove(themes[i]);
+        }
+
+        document.getElementById("content").classList.add(theme);
+        document.getElementById("theme-selector").value = theme;
+        currentTheme = theme;
+    }
+</script>
+<script id="script-image-conversion-handler">
+    function generateCanvas() {
+        document.getElementById("display").style.overflow = "visible";
+        document.getElementById("content").style.height = "fit-content";
+        document.getElementById("content").style.boxSizing = "content-box";
+        try {
+            return html2canvas(
+                document.getElementById("content"),
+                {allowTaint: true, useCORS: true}
+            );
+        } catch (error) {
+            throw error;
+        } finally {
+            document.getElementById("display").style.overflow = "auto";
+            document.getElementById("content").style.height = "96%";
+            document.getElementById("content").style.boxSizing = "border-box";
+        }
+    }
+</script>
+<script id="script-file-handler">
+    var filename = "";
+
+    function setFilename(newFilename) {
+        filename = newFilename;
+        document.getElementById("save-file-name").value = newFilename;
+    }
+
+    function getFilename() {
+        return (filename != "" ? filename : "untitled");
+    }
+
+    async function loadFromFile() {
+        if (confirm("This action cannot be undone.\nAre you sure you wish to overwrite the current data with this file?")) {
+            messages = [];
+            let error = false;
+            let reader = new FileReader();
+            reader.onload = function() {
+                try {
+                    let saveData = JSON.parse(reader.result);
+                    setTheme(saveData.theme);
+                    messages = saveData.messages;
+                    rebuildPage();
+                    displayNotification(true, "Success", "Loaded file");
+                } catch {
+                    displayNotification(false, "Failure", "File format not recognised")
+                };
+            }
+            let file = document.getElementById('load-from-file').files[0];
+            document.getElementById("load-from-file").value = null;
+
+            setFilename(file.name.replace(".core", "").replace(new RegExp(" \\(\\d\\)$"), ""));
+            reader.readAsText(file);
+        } else {
+            displayNotification(false, "Failure", "File loading was cancelled");
+        }
+    }
+
+    async function saveToFile() {
+        try {
+            const a = document.getElementById("file-download-helper");
+            a.href = URL.createObjectURL(new Blob([
+                    JSON.stringify({
+                        theme: currentTheme,
+                        messages: messages
+                    })
+                ],{type: 'text/plain'}
+            ));
+            a.download = getFilename() + ".core";
+            a.click();
+            displayNotification(true, "Success", "Saved to file");
+        } catch (error) {
+            displayNotification(false, "Error", error);
+        }
+    }
+
+    async function exportContentToJPG() {
+        try {
+            const a = document.getElementById("file-download-helper");
+            a.href = (await generateCanvas()).toDataURL("image/jpeg", 1.0);
+            a.download = getFilename() + ".jpg";
+            a.click();
+            displayNotification(true, "Success", "Exported to JPG");
+        } catch (error) {
+            displayNotification(false, "Error", error);
+        }
+    }
+
+    async function exportContentToHTML() {
+        try {
+            const a = document.getElementById("file-download-helper");
+            a.href = URL.createObjectURL(new Blob([
+                    "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><title>" +
+                    getFilename() + 
+                    "</title>" +
+                    document.getElementById("link-favicon").outerHTML +
+                    document.getElementById("style-generic").outerHTML +
+                    "<style>" +
+                    "body {background-color: #555;}" +
+                    "#content-holder{width: " + getComputedStyle(document.getElementById("content")).width + "; height: fit-content; margin: auto;}" +
+                    "</style>" +
+                    document.getElementById("style-display-content").outerHTML +
+                    document.getElementById("style-" + currentTheme).outerHTML +
+                    "</head><body><div id=\"content-holder\">" +
+                    document.getElementById("content").outerHTML +
+                    "</div></body></html>"
+                ],{type: 'text/html'}
+            ));
+            a.download = getFilename() + ".html";
+            a.click();
+            displayNotification(true, "Success", "Exported to HTML");
+        } catch (error) {
+            displayNotification(false, "Error", error);
+        }
+    }
+
+    async function exportContentToClipboard() {
+        try {
+            (await generateCanvas()).toBlob((blob) => {navigator.clipboard.write([new ClipboardItem({'image/png': blob})])});
+            displayNotification(true, "Success", "Exported to Clipboard");
+        } catch (error) {
+            displayNotification(false, "Error", error);
+        };
+    }
+</script>
+<script id="script-notification-handler">
+    function displayNotification (successful, title, message) {
+        let theme = successful ? "success" : "error";
+        window.createNotification({
+            positionClass: 'nfc-bottom-right',
+            displayCloseButton: true,
+            theme: theme
+        })({ 
+            title: title,
+            message: message
+        });
+    }
+</script>
+</html>
