@@ -17,6 +17,7 @@
 
         html, body {
             margin: 0;
+            overflow: hidden;
         }
 
         .prevent-select {
@@ -298,6 +299,37 @@
             border-right: 1px solid black;
         }
     </style>
+    <style>
+        #update-box {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #EEE;
+            text-align: center;
+            border-radius: 15px;
+            font-size: 2rem;
+            padding: 1%;
+            padding-top: 0;
+            border: 4px solid #222;
+        }
+
+        #update-box>p {
+            font-weight: 550;
+        }
+
+        #update-box>div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5%;
+        }
+
+        #update-box>div>button {
+            border: 2px solid grey;
+            border-radius: 5px;
+            font-size: 2rem;
+        }
+    </style>
     <style id="style-theme-1">
         /* cyrillic-ext */
         @font-face {
@@ -547,6 +579,13 @@
         </div>
     </div>
     <a id="file-download-helper" hidden="true"></a>
+    <div id="update-box" hidden="true">
+        <p>New Version Available!</p>
+        <div>
+            <button type="button" onclick='document.getElementById("update-box").hidden = true;'>Not Now</button>
+            <button type="button" onclick='downloadUpdateAndChangelog();'>Download</button>
+        </div>
+    </div>
 </body>
 <script id="script-generic">
     var messages = [
@@ -1027,6 +1066,8 @@
 </script>
 <script id="script-version-handler">
     const version = "1.2";
+    let latestVersion;
+    let latestDocument;
 
     function versionStringToVersion(versionString) {
         let versionArray = versionString.split(".");
@@ -1040,19 +1081,57 @@
         const version1 = versionStringToVersion(version1string);
         const version2 = versionStringToVersion(version2string);
         for (let i=0; i<Math.min(version1.length, version2.length); i++) {
-            if (version1[i] > version2[i]) {return version2string;}
-            if (version1[i] < version2[i]) {return version1string;}
+            if (version1[i] > version2[i]) {return version1string;}
+            if (version2[i] > version1[i]) {return version2string;}
         }
         if (version2.length > version1.length) {return version2string;}
         return version1string;
     }
 
+    async function getLatestVersion() {
+        latestDocument = await(await fetch("https://raw.githubusercontent.com/Zamblom/datacoregenerator/main/datacoregenerator.html?ms=" + Date.now())).text();
+        latestVersion = new RegExp('(?<=const version \\= ").*(?=";)').exec(latestDocument)[0];
+    }
+
+    async function getLatestChangelog() {
+        return await(await fetch("https://raw.githubusercontent.com/Zamblom/datacoregenerator/main/Changelogs/changelog_v" + latestVersion + ".core?ms=" + Date.now())).text();
+    }
+
+    function showUpdateBox() {
+    }
+
     async function checkForUpdate() {
-        const new_version = new RegExp('(?<=const version \\= ").*(?=";)').exec(await(await fetch("https://raw.githubusercontent.com/Zamblom/datacoregenerator/main/datacoregenerator.html")).text());
-        if (greaterVersion(version, new_version) == version) {
-            console.log("up to date");
-        } else {
-            console.log("new version available");
+        try {
+            await getLatestVersion();
+            const newVersion = latestVersion;
+            if (greaterVersion(version, newVersion) == version) {
+                displayNotification(true, "Success", "Latest Version");
+            } else {
+                document.getElementById("update-box").hidden = false;
+            }
+        } catch (error) {
+            displayNotification(false, "Error", error);
+        }
+    }
+
+    async function downloadUpdateAndChangelog() {
+        try {
+            const a = document.getElementById("file-download-helper");
+            a.href = URL.createObjectURL(new Blob([latestDocument],{type: 'text/html'}));
+            a.download = "datacoregenerator_v" + latestVersion + ".html";
+            a.click();
+            displayNotification(true, "Success", "Downloaded new version");
+        } catch (error) {
+            displayNotification(false, "Error", error);
+        }
+        try {
+            const a = document.getElementById("file-download-helper");
+            a.href = URL.createObjectURL(new Blob([await getLatestChangelog()],{type: 'text/plain'}));
+            a.download = "changelog_v" + latestVersion + ".core";
+            a.click();
+            displayNotification(true, "Success", "Downloaded new changelog");
+        } catch (error) {
+            displayNotification(false, "Error", error);
         }
     }
 </script>
