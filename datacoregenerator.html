@@ -575,6 +575,7 @@
         initialiseResizables();
         document.querySelector("#file-controls label").style.cssText = getComputedStyle(document.getElementById("load-from-file")).cssText
         rebuildPage();
+        checkForUpdate();
     }
 </script>
 <script id="script-message-editing-handler">
@@ -1022,6 +1023,21 @@
             title: title,
             message: message
         });
+    }
+</script>
+<script id="script-version-handler">
+    const version = [1, 1];
+
+    function checkForUpdate() {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                const response = this.responseText;
+                console.log(response);
+            }
+        }
+        xhttp.open("GET", "https://raw.githubusercontent.com/Zamblom/datacoregenerator/main/version.txt");
+        xhttp.send();
     }
 </script>
 </html>
