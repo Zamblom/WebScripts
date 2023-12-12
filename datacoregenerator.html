@@ -1026,18 +1026,34 @@
     }
 </script>
 <script id="script-version-handler">
-    const version = [1, 1];
+    const version = "1.2";
 
-    function checkForUpdate() {
-        const xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                const response = this.responseText;
-                console.log(response);
-            }
+    function versionStringToVersion(versionString) {
+        let versionArray = versionString.split(".");
+        for (let i=0; i<versionArray.length; i++) {
+            versionArray[i] = parseInt(versionArray[i]);
         }
-        xhttp.open("GET", "https://raw.githubusercontent.com/Zamblom/datacoregenerator/main/version.txt");
-        xhttp.send();
+        return versionArray;
+    }
+
+    function greaterVersion(version1string, version2string) {
+        const version1 = versionStringToVersion(version1string);
+        const version2 = versionStringToVersion(version2string);
+        for (let i=0; i<Math.min(version1.length, version2.length); i++) {
+            if (version1[i] > version2[i]) {return version2string;}
+            if (version1[i] < version2[i]) {return version1string;}
+        }
+        if (version2.length > version1.length) {return version2string;}
+        return version1string;
+    }
+
+    async function checkForUpdate() {
+        const new_version = new RegExp('(?<=const version \\= ").*(?=";)').exec(await(await fetch("https://raw.githubusercontent.com/Zamblom/datacoregenerator/main/datacoregenerator.html")).text());
+        if (greaterVersion(version, new_version) == version) {
+            console.log("up to date");
+        } else {
+            console.log("new version available");
+        }
     }
 </script>
 </html>
